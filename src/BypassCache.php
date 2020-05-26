@@ -52,6 +52,9 @@ class BypassCache
         }
     }
 
+    /**
+     * Initialize options page.
+     */
     public function addAdminMetaBoxAndMenu(): void
     {
         add_submenu_page(
@@ -64,6 +67,9 @@ class BypassCache
         );
     }
 
+    /**
+     * Render and process form.
+     */
     public function adminPanel(): void
     {
         if (!current_user_can('administrator')) {
@@ -98,6 +104,11 @@ class BypassCache
         include_once($this->plugin->folder . 'views/settings.php');
     }
 
+    /**
+     * Convert settings string to array and remove empty strings in array.
+     * @param $setting
+     * @return array
+     */
     private static function parseSetting($setting): array
     {
         return array_filter(explode("\n", $setting), function ($s) {
