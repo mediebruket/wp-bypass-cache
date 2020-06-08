@@ -4,10 +4,6 @@
 
     <description>PHP Code Sniffer configuration file.</description>
 
-    <!-- check files in -->
-    <file>src</file>
-    <file>views</file>
-
     <!-- Base rule -->
     <rule ref="PSR12"/>
 

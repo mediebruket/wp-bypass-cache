@@ -1,4 +1,5 @@
 <?php
+
 /**
 * Plugin Name: Bypass Cache
 * Description: Bypass WPFC cache for specified URLs.
