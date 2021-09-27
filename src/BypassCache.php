@@ -48,7 +48,7 @@ class BypassCache
         }
 
         foreach ($parsedSetting as $item) {
-            setcookie('wordpress_no_cache', '1', 0, $item);
+            setcookie('wordpress_no_cache', '1', 0, trim($item));
         }
     }
 
