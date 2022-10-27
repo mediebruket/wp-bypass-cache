@@ -43,7 +43,7 @@ class BypassCache
             return;
         }
 
-        if (is_admin() || is_feed() || is_robots() || is_trackback()) {
+        if (is_admin() || is_feed() || is_robots() || is_trackback() || wp_doing_cron()) {
             return;
         }
 
